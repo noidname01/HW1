@@ -12,7 +12,7 @@ def main():
     with open(sys.argv[1] + '_p2.txt', 'w') as f2:
         for sets in p2_list:
             if p2_has_cycle(sets):
-                f1.write('Yes')
+                f2.write('Yes')
             else:
                 f2.write('No')
             f2.write('\n')
