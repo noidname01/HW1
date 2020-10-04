@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def p1_has_cycle(sets):
     # TODO
     # return True if the graph has cycle; return False if not
