@@ -2,7 +2,6 @@ import sys
 from graph_gen import *
 from p1 import p1_has_cycle
 import networkx as nx
-import pdb
 
 
 def main():
@@ -21,8 +20,8 @@ def main():
         except:
             has_cycle = False
         if p1_has_cycle(p1_list_converted[i]) != has_cycle:
-            pdb.set_trace()
-    print('All clear!!')
+            print('Bug in the {}th graph'.format(i))
+
 
 if __name__ == '__main__':
     main()
