@@ -20,7 +20,7 @@ def main():
         except:
             has_cycle = False
         if p1_has_cycle(p1_list_converted[i]) != has_cycle:
-            print('Bug in the {}th graph'.format(i))
+            print('Bug in the {}th graph. P1.'.format(i))
 
 
 if __name__ == '__main__':
