@@ -1,6 +1,7 @@
 import numpy as np
 import numpy.random as rand
 
+
 def gen_graph(node_num, edge_num):
     graph_list = list()
     rec = list()
