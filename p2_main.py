@@ -1,6 +1,7 @@
 import sys
 from graph_gen import *
 from p2 import p2_has_cycle
+import networkx as nx
 
 
 def main():
@@ -19,7 +20,7 @@ def main():
         except:
             has_cycle = False
         if p1_has_cycle(p2_list_converted[i]) != has_cycle:
-            print('Bug in the {}th graph'.format(i))
+            print('Bug in the {}th graph. P2.'.format(i))
     
 
 if __name__ == '__main__':
