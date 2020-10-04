@@ -3,11 +3,18 @@ import numpy.random as rand
 
 def gen_graph(node_num, edge_num):
     graph_list = list()
+    rec = list()
     for _ in range(edge_num):
         while True:
             edge = rand.randint(0, node_num, 2)
             if edge[0] != edge[1]:
-                graph_list.append(edge.tolist())
+                if len(rec) == 0:
+                    rec.append('{} {}'.format(edge[0], edge[1]))
+                else:
+                    if '{} {}'.format(edge[0], edge[1]) not in rec:
+                        graph_list.append(edge.tolist())
+                        rec.append('{} {}'.format(edge[0], edge[1]))
+
                 break
     return graph_list
 
