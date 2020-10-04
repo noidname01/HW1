@@ -1,4 +1,5 @@
 from scipy.sparse import *
+import numpy as np
 
 def p2_has_cycle(sets):
     # TODO
