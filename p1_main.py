@@ -1,6 +1,8 @@
 import sys
 from graph_gen import *
 from p1 import p1_has_cycle
+import networkx as nx
+
 
 def main():
     p1_list = list()
