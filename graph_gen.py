@@ -52,12 +52,12 @@ def convert_p2(graph_list):
 def get_p1(seed):
     seed = int(seed[2:])
     rand.seed(seed*10+1)
-    graph_list = gen_graph_list(12)
+    graph_list = gen_graph_list(8)
     return graph_list
 
 def get_p2(seed):
     seed = int(seed[2:])
     rand.seed(seed*10+2)
-    graph_list = gen_graph_list(12)
+    graph_list = gen_graph_list(8)
     return graph_list
 
